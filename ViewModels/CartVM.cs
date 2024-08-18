@@ -9,4 +9,10 @@
         public int SoLuong { get; set; }
         public double ThanhTien => DonGia * SoLuong; 
     }
+
+    public class CartModel
+    {
+        public int Quantity { get; set; }
+        public double Total { get; set; }
+    }
 }

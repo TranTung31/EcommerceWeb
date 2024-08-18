@@ -3,7 +3,7 @@
     ViewData["Title"] = "ProductList";
 }
 
-<h3>Có @Model.Count() sản phẩm</h3>
+<h3>Have @Model.Count() products</h3>
 
 @foreach (var item in Model)
 {
@@ -22,7 +22,7 @@
                 <p>@item.MoTa</p>
                 <div class="d-flex justify-content-between flex-lg-wrap">
                     <p class="text-dark fs-5 fw-bold mb-0">$@item.DonGia</p>
-                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHh" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                    <a asp-action="AddToCart" asp-controller="Cart" asp-route-id="@item.MaHh" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
                 </div>
             </div>
         </div> 
